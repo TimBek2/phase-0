@@ -41,3 +41,16 @@ rm - remove a file
 help - in Linux we use the man command instead of help but this gives you the included manual on a command. very in-depth. 
 
 # 1.4 Forking and Cloning Reflection
+1. The instructions provided, through both the step-by-step and video instructions, are pretty much perfect in my eyes. 
+
+a. Start by explaining what a repository is (basically a folder, but it lives on the cloud), and show how to make a new repository on GitHub's site.
+
+b. Next, show how to fork other people's repositories to your own GitHub account and explain why that's valuable (see below).
+
+c. Lastly, show how to clone the remote repository from your GitHub account to your local machine using the terminal.
+
+Forking a repository is basically useful as a means of copying an entire file/folder, and all of its contents, to your own account quickly and easily with one button, rather than creating a new repository and then individually copying all of the contents over one at a time. Aside from time-saving, it also helps ensure that you don't accidentally miss some file buried deep in the repository. 
+
+2. I tend to get confused on every step that includes using a new peripheral application from the terminal, since most of the explanatory steps have links to other pages that are teaching initial setup. However, a lot of these pages are setup guides of their own, written by individual coders, not organizations with an educational agenda, so they have lots of personal recommendations that occasionally conflict with each other (use vim vs sublime, use homebrew or don't use homebrew, etc). I'll end up reading a few of the side materials, getting confused and spending an hour researching, but then when I throw up my hands and just move on through the course material I realize that I should've ignored the majority of those side readings and just stuck with the DBC-created instructions and videos.
+
+I also got hung up a bit on the part where the instructions talk about HTML vs SSH for cloning the repository to my local machine, and only after reading a bit online did I realize that at least for where I'm at, it doesn't really make a difference. Part of me wishes that it wasn't mentioned at all, since GitHub defaults with HTML and we're set up to use HTML in the computer setup process, since it just sent me down a rabbit hole, but I've also never complained about learning something, even something that's not immediately helpful, so I'm hesitant to forcefully stand behind that. 
