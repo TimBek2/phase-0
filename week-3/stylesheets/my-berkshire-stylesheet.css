@@ -53,6 +53,7 @@ ul {
 }
 
 /*
+
 What is important to know when linking an external file (like a stylesheet) to an HTML file?
 Make sure you get the relative link to the file correct. Initially I thought that remembering the three attributes to give it would be hard, but then I learned that Sublime text will automatically fill those in if you use tab autocomplete, so that was super handy.
 
@@ -67,4 +68,5 @@ We used classes and tags, but no IDs. Between classes and tags we were basically
 
 When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
 I think that our code was definitely cleaner and more up to standards, since they just use a table and we used current HTML5 tags and simpler CSS classes/stylesheets instead of doing it all inline like they did. That said, their site is tiny so it loads quickly, it has no fancy bells and whistles that might not run on older browsers, and it's totally responsive so no matter what you view it on, it'll look correct. So it's a very very specialized site, and does those things well. 
+
 */
