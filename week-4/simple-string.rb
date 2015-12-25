@@ -1,9 +1,10 @@
 # Solution Below
 
 old_string = "Ruby is cool"
+# This defines the object old_string as the String "Ruby is cool"
 
 new_string = old_string.reverse.upcase
-
+# We call two methods on this string, the first reversing it and the second making the whole string upper case. You can call as many as you want on an object, even if they cancel each other out (like string.upcase.downcase).
 
 
 # RSpec Tests. They are included in this file because the local variables you are creating are not accessible across files. If we try to run these files as a separate file per normal operation, the local variable checks will return nil.
