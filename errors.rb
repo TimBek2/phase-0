@@ -1,7 +1,7 @@
 # Analyze the Errors
 
 # I worked on this challenge by myself.
-# I spent [#] hours on this challenge.  9:11 PM
+# I spent [1.5] hours on this challenge.  9:11 PM
 
 # --- error -------------------------------------------------------
 
