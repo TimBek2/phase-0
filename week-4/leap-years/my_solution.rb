@@ -1,6 +1,6 @@
 # Leap Years
 
-# I worked on this challenge [by myself, with: Jeremy Oltean].
+# I worked on this challenge with: Ieronim Oltean.
 
 
 # Your Solution Below

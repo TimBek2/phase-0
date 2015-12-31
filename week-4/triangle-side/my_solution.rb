@@ -1,4 +1,6 @@
-# I worked on this challenge with: Jeremy.
+#Valid Triangle
+
+# I worked on this challenge with: Ieronim Oltean.
 
 
 # Your Solution Below
