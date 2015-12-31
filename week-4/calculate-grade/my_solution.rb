@@ -6,17 +6,15 @@
 # Your Solution Below
 
 def get_grade(average)
-	if average > 90
+	if average > 89
 		return "A"
-	elsif average > 80
+	elsif average > 79
 		return "B"
-	elsif average > 70
+	elsif average > 69
 		return "C"
-	elsif average > 60
+	elsif average > 59
 		return "D"
 	else
 		return "F"
 	end
 end
-
-puts get_grade(99)
