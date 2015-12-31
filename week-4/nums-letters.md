@@ -1,3 +1,9 @@
+Other Challenge Submissions:
+https://github.com/TimBek2/phase-0/blob/master/week-4/defining-variables.rb
+https://github.com/TimBek2/phase-0/blob/master/week-4/simple-string.rb
+https://github.com/TimBek2/phase-0/blob/master/week-4/basic-math.rb
+
+
 What does puts do?
 Puts literally writes to the screen whatever comes after it. It doesn't return any result back into the program, just writes it to the screen.
 
