@@ -1,6 +1,6 @@
 # Calculate a Grade
 
-# I worked on this challenge by myself.
+# I worked on this challenge with: Ieronim Oltean.
 
 
 # Your Solution Below
