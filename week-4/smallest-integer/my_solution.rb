@@ -13,5 +13,10 @@
 
 # Your Solution Below
 def smallest_integer(list_of_nums)
+  list_of_nums.sort!
+  smallest = list_of_nums.shift
+  p smallest
   
 end
+#test = []
+#smallest_integer(test)
