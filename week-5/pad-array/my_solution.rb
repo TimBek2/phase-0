@@ -71,6 +71,13 @@ def pad(array, min_size, value = nil) #non-destructive
   copied_array
 end
 
+# James's 1 line solution:
+# def pad(a, b, c = nil)
+#   a.size >= b ? a.clone : a + Array.new(b - a.size, c)
+# end
+
+
+
 =begin
 4. Reflection
 
