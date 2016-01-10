@@ -71,5 +71,24 @@ def pad(array, min_size, value = nil) #non-destructive
   copied_array
 end
 
+=begin
+4. Reflection
 
-# 4. Reflection
+Were you successful in breaking the problem down into small steps?
+Yes. This was the first time a pair and I had used pseudocode extensively at the start of a problem, and it was very helpful at breaking the challenges down.
+
+Once you had written your pseudocode, were you able to easily translate it into code? What difficulties and successes did you have?
+We were successful at translating it into what we thought we wanted, and then we had to go to the ruby docs to find a method that actually did what we wanted. There were a few rabbit holes, going down strategies that didn't end up working, but in the end we were able to stick mostly to our pseudocode when we got to our solutions.
+
+Was your initial solution successful at passing the tests? If so, why do you think that is? If not, what were the errors you encountered and what did you do to resolve them?
+Our initial solution didn't work because we were incorrectly using if statements and while loops. When we thought we were properly setting up an iteration, we were actually hitting some variables twice so it would get itself stuck in a loop of adding one to get to a number which has also been increased by one, thus never ending. Running the rspec showed us what we were doing wrong, and after trying different ideas we found one that works. 
+
+When you refactored, did you find any existing methods in Ruby to clean up your code?
+Yes, we were able to cut our code down from 10 lines and 12 lines, respectively, to 3 and 4 lines respectively. My pair even went back later and found a way to reduce the destructive challenge to only one line. 
+
+How readable is your solution? Did you and your pair choose descriptive variable names?
+I think it's very readable. We used relevant names for variables, and used methods that we thought were clearer, for example .clone on an array instead of .dup (duplicate).
+
+What is the difference between destructive and non-destructive methods in your own words?
+A destructive method takes the original input and alters it, returning to you the result of your code. A non-destructive method, on the other hand, takes the original input and operates on it, returning the result of the code in a new object and preserving the original. 
+=end
