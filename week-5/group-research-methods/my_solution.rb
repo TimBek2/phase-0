@@ -1,35 +1,10 @@
 # Research Methods
 
-# I spent [] hours on this challenge.
+# I spent [1] hours on this challenge.
 
 i_want_pets = ["I", "want", 3, "pets", "but", "only", "have", 2]
 my_family_pets_ages = {"Evi" => 6, "Ditto" => 3, "Hoobie" => 3, "George" => 12, "Bogart" => 4, "Poly" => 4, "Annabelle" => 0}
-=begin
-# Person 1's solution
-def my_array_finding_method(array,letter)
-  new_array = array.dup
-  array_result = new_array.grep(/#{letter}/)
-  p array_result
-  
 
-  end
-
-def my_hash_finding_method(hash, value)
-  new_array = []
-  hash.each do |k,v|
-    if v == value
-      new_array << k
-    end
-  end
-  p new_array
-end
-
-
-# Identify and describe the Ruby method(s) you implemented.
-#
-#
-#
-=end
 
 # Person 2
 def my_array_modification_method!(array, number)
@@ -50,76 +25,50 @@ def my_hash_modification_method!(hash, number)
 end
 
 # Identify and describe the Ruby method(s) you implemented.
-# .map! executes a given code block on each element in the array, just like .each does, but .map returns an array with the values that the iteration returned, while .each returns the results of the iteration along with the original array. By using a bang (!), we made it update the original array i_want_pets[] instead of creating a new one. 
-# .is_a? is a boolean method that returns true if the object is whatever class you pass it. By using Fixnum, we are checking if the object is an integer as opposed to a string. Using it in an if statement allowed us to run a block of code only on objects that are numbers, and use the else statement to return the string results unaltered.
-# 
+# .map! executes a given code block on each element in the array, just like .each 
+# does, but .map returns an array with the values that the iteration returned, 
+# while .each returns the results of the iteration along with the original array. 
+# .is_a? is a boolean method that returns true if the object is whatever class you 
+# pass it. By using Fixnum, we are checking if the object is an integer as opposed
+# to a string. Using it in an if statement allowed us to run a block of code only
+# on objects that are numbers, and use the else statement to return the string
+# results unaltered.
+# hash.keys.each is a series of methods strung together to create a command that
+# will pass a code block to all of the keys in a hash. Since in this case all of
+# the values are integers, pet ages, I was able to create a simple code block to
+# increase all of the values 
 
-=begin
+# Teach others to use the methods
+# For the array:
+# .map! and .map are very straightforward as said above, they are just like .each
+# but return a new array as opposed to the result and then the old array. By using
+# a bang (!), we made it update the original array i_want_pets[] instead of
+# creating a new object.
+# I used .is_a? to determine if the value is a number or a string, since those are
+# in the original array. If it's a number, then it is passed the block to increase
+# the number by whatever argument was input. If it's not a number, we need to
+# remember to return or p the object so that it is in the result, rather than just
+# returning the increased numbers and nothing else. 
 
-# Person 3
-def my_array_sorting_method(source)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
-end
+# For the hash:
+# This was done in basically one statement. I could have done:
+# hash.each do { |key, value| hash[key] += number }
+# but since we're only updating values, I could append the key to the method and
+# write a code block that only mentions what we care to change. 
 
-def my_hash_sorting_method(source)
-   source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
-end
-
-# Identify and describe the Ruby method(s) you implemented.
-#
-#
-#
-
-
-=end
-
-=begin
-
-# Person 4
-def my_array_deletion_method!(source, thing_to_delete)
-  source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
-end
-
-def my_hash_deletion_method!(source, thing_to_delete)
-  source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
-end
-
-# Identify and describe the Ruby method(s) you implemented.
-#
-#
-#
-
-=end
-
-=begin
-
-# Person 5
-def my_array_splitting_method(source)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
-end
-
-def my_hash_splitting_method(source, age)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
-end
-
-# Identify and describe the Ruby method(s) you implemented.
-#
-#
-#
-
-=end
+# Tricks for Ruby Docs
+# Like everyone else I don't consider myself to have any tricks yet. My general
+# strategy is to skim the object page for any methods that look like they may be
+# a solution to what I want. If I don't have any luck there, I'll go to google
+# and try to do general searches for what I'm trying to do, as well as using find
+# on the page to see if any keywords I come up with will appear in the descriptions.
+# Once I find some suggestions there, I don't look into the full forum post - I
+# go find that method in the docs and try to figure out how to use it myself. 
 
 
-# Release 1: Identify and describe the Ruby method you implemented. Teach your
-# accountability group how to use the methods.
-#
-#
-#
 
 
-# Release 3: Reflect!
-# What did you learn about researching and explaining your research to others?
-#
-#
-#
-#
+
+
+
+
