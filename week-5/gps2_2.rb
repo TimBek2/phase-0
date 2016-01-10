@@ -106,3 +106,25 @@ def print_list
 end
 
 print_list
+
+
+=begin
+  
+What did you learn about pseudocode from working on this challenge?
+When I initially thought about pseudocode when I first learned about it, I thought it was a waste of time because the code we were working on was simple. In this challenge, I learned that it can actually help the research process, because you'll break down the problem into pieces which you can then look up and piece together. 
+
+What are the tradeoffs of using Arrays and Hashes for this challenge?
+Hashes were much more useful for most of the problems in this challenge, because we had both a key and value pair most of the time while we were working through it. However, you need to be able to convert back and forth based on what other methods are returning to you and what you want to do. 
+
+What does a method return?
+A method returns whatever the value of its last statement is, unless you explicitly use the return command. 
+
+What kind of things can you pass into methods as arguments?
+Anything can be an argument, it depends on what the method is defined to accept as an argument.
+
+How can you pass information between methods?
+You can call methods within each other, or you can use global variables to carry information from one method defininition to the next.
+
+What concepts were solidified in this challenge, and what concepts are still confusing?
+Hashes and arrays are still a little confusing, but really it's more related to general unfamiliarity to the whole space - I don't know the syntax of any of this stuff fluently yet, so it's still a jerky process.  
+end
