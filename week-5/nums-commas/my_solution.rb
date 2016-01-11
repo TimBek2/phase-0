@@ -12,7 +12,7 @@
 # 0. Pseudocode
 
 # What is the input? A positive integer
-# What is the output? (i.e. What should the code return?) A string that contains the integer with separating commas - 1000 => 1,000
+# What is the output? (i.e. What should the code return?) A string that contains the integer with separating commas if necessary - 1000 => 1,000
 # What are the steps needed to solve the problem? 
 # Take the number, convert it to a string
 # Place a comma at every 3rd digit, starting from the right
