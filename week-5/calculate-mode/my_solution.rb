@@ -1,8 +1,8 @@
 # Calculate the mode Pairing Challenge
 
-# I worked on this challenge with: Ryan Salerno
+# I worked on this challenge [by myself, with: ]
 
-# I spent [2] hours on this challenge.
+# I spent [] hours on this challenge.
 
 # Complete each step below according to the challenge directions and
 # include it in this file. Also make sure everything that isn't code
@@ -39,7 +39,7 @@ def mode(arr)
       end
     max = hash.values.max
     new_hash = Hash[hash.select { |k, v| v == max}]
-    return new_hash.keys
+    return new_hash.values
 end
 
 # 3. Refactored Solution
@@ -48,14 +48,4 @@ end
 
 
 # 4. Reflection
-# Which data structure did you and your pair decide to implement and why?
-# Our solution used hashes because we saw that we needed to save both the object from the array and how frequently it occured. 
-
-# Were you more successful breaking this problem down into implementable pseudocode than the last with a pair? 
-# Yes, every time I use pseudocode again I start getting better at it, and it starts getting closer to being in the form to how it will actually look as code.
-
-# What issues/successes did you run into when translating your pseudocode to code?
-# The pseudocode code always makes plenty of conceptual sense, but then actually executing it with proper ruby syntax takes much longer than anticipated because we don't know which methods work best in different situations.
-
-# What methods did you use to iterate through the content? Did you find any good ones when you were refactoring? Were they difficult to implement?
-# We used arr.map on the initial array to convert it to a hash with a default value, and then we used .each to iterate through the array using .has_key? in an if statement to increase the counter if it encountered an object again. 
+# The pseudocode code always makes plenty of conceptual sense, but then actually executing it with proper ruby syntax takes much longer than anticipated.
