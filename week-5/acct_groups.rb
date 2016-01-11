@@ -94,6 +94,7 @@ def distribute(groups)
 	return groups
 end
 
+p group(roster)
 
 # Complexity
 
@@ -114,10 +115,19 @@ end
 		Reflection
 ==========================
 What was the most interesting and most difficult part of this challenge?
+I didn't know how to break up the original array at first, but it wasn't hard to find .each_slice as I'd seen it once before. After that, figuring out how to redistribute a small group was a hard challenge. 
+
 Do you feel you are improving in your ability to write pseudocode and break the problem down?
+Yes. Every challenge makes it easier, as I'm starting to learn what terms that are similar to actual code, making the transition from pseudo to real code that much easier.
+
 Was your approach for automating this task a good solution? What could have made it even better?
+I'd like to find a way to condense the whole problem into one method that will automatically redistribute the last group if it only has 2 members, but I'm not sure how to write that if statement yet.
+
 What data structure did you decide to store the accountability groups in and why?
+I used arrays for this whole challenge since there's a list of only one data point being used - names, and the order doesn't even matter since it gets randomized to avoid repitition. Since arrays can contain arrays, there's no need to use anything else. 
+
 What did you learn in the process of refactoring your initial solution? Did you learn any new Ruby methods?
+I got more experience using .each_slice, and the syntax for that. Specifically, I didn't realize that I needed to call it .to_a after using .each_slice on it, but the sliced up arrays weren't getting passed on. 
 	
 =end
 
