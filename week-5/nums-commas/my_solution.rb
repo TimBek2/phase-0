@@ -23,15 +23,15 @@ def separate_comma(number)
 	if number.length < 4
 		return number
 	else
-		i = -1
+		n = -1
 		counter = 0
-		while i.abs < number.length - counter
-			if i % 3 == 0
-				number = number.insert( i - 1 - counter, ',')
+		while n.abs < number.length - counter
+			if n % 3 == 0
+				number = number.insert( n - 1 - counter, ',')
 				counter += 1
 			else
 			end
-		i -= 1
+		n -= 1
 		end
 	return number
 	end
@@ -45,18 +45,18 @@ def separate_comma(number)
 	if number.length <= 3
 		return number
 	else
-		i = -1
+		n = -1
 		counter = 0
 		length_of_number = (number.length - counter)
 
-		while i.abs < length_of_number
-			comma_location = (i - 1 - counter)
-			if i % 3 == 0
+		while n.abs < length_of_number
+			comma_location = (n - 1 - counter)
+			if n % 3 == 0
 				number = number.insert(comma_location, ',')
 				counter += 1
 			else
 			end
-			i -= 1
+			n -= 1
 		end
 	return number
 	end
