@@ -17,11 +17,12 @@
 # Remember that commas add a character to the string
 # 
 # 1. Initial Solution
+
 def separate_comma(number)
 	number = number.to_s
-		if number.length < 4
-			return number
-		else
+	if number.length < 4
+		return number
+	else
 		i = -1
 		counter = 0
 		while i.abs < number.length - counter
@@ -32,34 +33,35 @@ def separate_comma(number)
 			end
 		i -= 1
 		end
-		return number
-		end
+	return number
+	end
 end
 
 
 
 # 2. Refactored Solution
 def separate_comma(number)
-  number = number.to_s
-  if number.length <= 3
-    return number
-  else
-  i = -1
-  counter = 0
-  length_of_number = (number.length - counter)
+	number = number.to_s
+	if number.length <= 3
+		return number
+	else
+		i = -1
+		counter = 0
+		length_of_number = (number.length - counter)
 
-  while i.abs < length_of_number
-      comma_location = (i - 1 - counter)
-      if i % 3 == 0
-        number = number.insert(comma_location, ',')
-        counter += 1
-      else
-      end
-  i -= 1
-  end
-  return number
-  end
+		while i.abs < length_of_number
+			comma_location = (i - 1 - counter)
+			if i % 3 == 0
+				number = number.insert(comma_location, ',')
+				counter += 1
+			else
+			end
+			i -= 1
+		end
+	return number
+	end
 end
+
 
 # 3. Reflection
 =begin
@@ -79,7 +81,7 @@ Do you feel your refactored solution is more readable than your initial solution
 Only slightly. It has a more clearly named variable, which is helpful at breaking up the numbers in the densest part of the code, but I didn't shorten the code at all. 
 	
 end
-
+=end
 
 
 
