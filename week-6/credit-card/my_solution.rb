@@ -108,3 +108,26 @@ end
 # p definitley_fake.check_card
 
 # Reflection
+=begin
+What was the most difficult part of this challenge for you and your pair?
+The part we had the most trouble with was just managing all of the different object transformations in order to access the methods that we wanted - for example, converting the integer to a string in order to determine if the length is 16 digits, then also converting it to an array, splitting out the numbers that shouldn't be doubled, and then converting the array into integers to complete math operations. 
+
+What new methods did you find to help you when you refactored?
+We used the with_index method, which was a new one for me, but that was brought up in the original solution too. The only thing we did when we refactored was clean up variable names to make it more readable. 
+
+What concepts or learnings were you able to solidify in this challenge?	
+I have a better handle on transforming objects to different types in order to utilize different methods on it, particularly on iterating over arrays. My pair also pointed out that we could simplify the refactored version and have just one sum variable which both of the new arrays are added too, which I had not considered. 
+
+
+	
+=end
+
+
+
+
+
+
+
+
+
+
