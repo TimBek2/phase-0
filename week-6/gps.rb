@@ -45,26 +45,23 @@ def serving_size_calc(item_to_make, your_ingredients)
     p "Make #{plates} #{item_to_make}"
   elsif remaining_ingredients == 1 
     p "Make #{plates} #{item_to_make} and 1 cookie"
-  elsif remaining_ingredients > 1
-    p "Make #{plates} #{item_to_make} and #{remaining_ingredients} cookies"
   elsif remaining_ingredients % 5 == 0 
     p "Make #{plates} #{item_to_make} and #{remaining_ingredients / 5} cakes"
   elsif remaining_ingredients % 7 == 0
     p "Make #{plates} #{item_to_make} and #{remaining_ingredients / 7} pie"
+  elsif remaining_ingredients > 1
+    p "Make #{plates} #{item_to_make} and #{remaining_ingredients} cookies"
   end
 end
   
-serving_size_calc('pie', 15)
+serving_size_calc('pie', 12)
 serving_size_calc('pie', 19)
 serving_size_calc("pie", 8)
 serving_size_calc('pie', 4)
-
 serving_size_calc("cake", 5)
 serving_size_calc("cake", 7)
-
 serving_size_calc("cookie", 1)
 serving_size_calc("cookie", 10)
-
 serving_size_calc("donut", 5)
 
 #  Reflection
