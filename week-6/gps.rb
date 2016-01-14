@@ -23,21 +23,23 @@ def serving_size_calc(item_to_make, your_ingredients)
   end
 
   if error_counter > 0
-    raise ArgumentError.new("#{item_to_make} is not a valid input")
+    raise ArgumentError.new("We don't make #{item_to_make}s")
   end
 
   serving_size = library.values_at(item_to_make)[0]
   remaining_ingredients = your_ingredients % serving_size
-   
+  
+=begin
+
   if your_ingredients < serving_size
     p "You don't have enough ingredients to make #{item_to_make}, how about #{your_ingredients} cookies?"
   end
+=end
 
   plates = your_ingredients / serving_size
   if plates > 1
     item_to_make = item_to_make + 's'
   end
-
   
   if remaining_ingredients == 0 
     p "Make #{plates} #{item_to_make}"
