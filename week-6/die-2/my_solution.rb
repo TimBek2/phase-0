@@ -1,78 +1,82 @@
-# Class Warfare, Validate a Credit Card Number
+# Die Class 2: Arbitrary Symbols
 
 
-# I worked on this challenge  with: Aaron Opsahl.
-# I spent [2] hours on this challenge.
+# I worked on this challenge by myself
+# I spent [#] hours on this challenge.
 
 # Pseudocode
 
-# Input: 16 digit integer - return ArgumentError if not exactly 16 digits
-# Output: True or false when #check_card is run on class CreditCard
-# Steps: 
-# Take integer as input - if it is != 16 then return ArgumentError "not a valid credit card number"
-#   Create instance variable with credit card number
-# Define check_card method
-# Starting with the first number, double every other number (1, 3, 5, 7, etc)
-# Add all the numbers together, no two-digit numbers (10 = 1 + 0)
-# If number % 10 == 0, return true
-# Else return false
+# Input: Array of strings
+# Output: Create a dice object with each string representing one side, or Arg error if empty array
+# Steps: Evaluate length of array, create object with that many sides
+# Iterate through array and assign each string to one side
+# 
 
 
 # Initial Solution
 
-# Don't forget to check on initialization for a card length
-# of exactly 16 digits
+# class Die
+#   def initialize(labels)
+#     @labels = labels
+#     @sides = labels.count
+#       raise ArgumentError.new("Please enter at least one side name") if @sides == 0
+#   end
 
-class CreditCard
-  
-  attr_accessor :card_num
-  
-  def initialize(card_num)
-    raise ArgumentError.new("Not a valid credit card number!") if card_num.to_s.size != 16
-    @card_num = card_num
+#   def sides
+#     return @sides.to_i
+#   end
+
+#   def roll
+#     roll = rand( 0..( @sides - 1 ))
+#     return @labels[roll]
+#   end
+# end
+
+
+
+# Refactored Solution
+
+class Die
+  def initialize(labels)
+    @labels = labels
+    @sides = labels.count
+      raise ArgumentError.new("Please enter at least one side name") if @sides == 0
   end
 
+  def sides
+    return @labels.count
+  end
 
-  def check_card
-    og_card_array = @card_num.to_s.split('')  #gives array of the numbers, as strings
-    doubled_array = og_card_array.select.with_index { |_, i| i.even? } #might switch to even - use spec
-    single_array = og_card_array.select.with_index { |_, i| i.odd? }
-    doubled_array.map! { |num| num.to_i * 2 }
-    real_doubled_array = doubled_array.join.chars.map!(&:to_i)
-    
-    doubled_sum = 0
-    real_doubled_array.map! { |x| doubled_sum += x }
-    doubled_sum
-    single_array.map! { |num| num.to_i }
-    
-    single_sum = 0
-    single_array.each { |x| single_sum += x }
-    
-    sum = doubled_sum + single_sum
-    
-    if sum % 10 == 0
-      puts "Congratulations! Card accepted!"
-      return true
-    else
-      puts "Not a valid credit card"
-      return false
-    end
+  def roll
+    roll = rand( 0..( @sides - 1 ))
+    return @labels[roll]
   end
 end
 
-# Refactored Solution
-  
-
-
-
-
-
-# Driver Code
-new_card = CreditCard.new(4408041234567901)
-p new_card.check_card
-bad_card = CreditCard.new(4408041234567906)
-p bad_card.check_card
-definitely_fake = CreditCard.new(27965)
-p definitley_fake.check_card
 
 # Reflection
+=begin
+What were the main differences between this die class and the last one you created in terms of implementation? Did you need to change much logic to get this to work?
+It took me a while to figure out how to get the side labels to stick, but once I figured out how to use them, there wasn't too much difference between this task and the last one. For a while, I struggled to visualize the object being created and couldn't figure out how to write the code, but eventually I had an aha moment. 
+
+What does this exercise teach you about making code that is easily changeable or modifiable? 
+A lot of what I used in this challenge was borrowed from my solution to the last dice challenge - this reminds me to make code that is well explained especially for myself - if I want to come back and alter something, it's good to leave breadcrumbs so I can remember how all the moving parts fit together. 
+
+What new methods did you learn when working on this challenge, if any?
+I used .count for the first time, but that isn't exactly new, and I had seen it before, it just hadn't been implemented.
+
+What concepts about classes were you able to solidify in this challenge?  
+I learned how to iterate an array of names into being the attributes for the object, instead of just having an integer that indicated how many sides it has. This is much more powerful, since these objects can now have essentially infinite possibilites for attribute lists.
+
+
+
+
+  
+=end
+
+
+
+
+
+
+
