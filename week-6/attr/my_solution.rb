@@ -30,12 +30,12 @@ class Greetings
 	end
 
 	def hello
-		print "Hello #{@name.name}, how you doin?"
+		puts "Hello #{@name.name}, how you doin?"
 	end
 end
 
 test = Greetings.new
-puts test.hello
+test.hello
 
 
 # Reflection
