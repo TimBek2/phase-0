@@ -1,7 +1,7 @@
 # Virus Predictor
 
 # I worked on this challenge with: 
-# We spent [#] hours on this challenge.
+# We spent [2] hours on this challenge.
 
 # EXPLANATION OF require_relative
 #
