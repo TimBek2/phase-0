@@ -28,7 +28,7 @@ class VirusPredictor
   def death_toll(population_density, population, state)
     speed = 0.0
     
-      if @population_density >= 200
+    if @population_density >= 200
       number_of_deaths = (@population * 0.4).to_i
       speed += 0.5
     elsif @population_density >= 150
@@ -104,5 +104,27 @@ end
 
 #=======================================================================
 # Reflection Section
+=begin
+	
+What are the differences between the two different hash syntaxes shown in the state_data file?
+The parent hash uses a hashrocket to denote key and value, and then the value of each of those hash entires is in turn another hash, which has keys and values just separated with a comma. 
+
+What does require_relative do? How is it different from require?
+Require relative loads the content of another file within this file. The filepath for #require starts at the root directory, but require_relative begins at the location of the current file, so the path you give is a relative filepath. 
+
+What are some ways to iterate through a hash?
+We used .each to iterate through the hash, which logic built using conditional if statements, but other enumerables are possible, as well as things like .times loops.
+
+When refactoring virus_effects, what stood out to you about the variables, if anything?
+The variables in all of the methods were the same, and the only variable that determined fundamental changes in any forumula was population density, so we were able to combine all of the methods into one singular method that returned death rate and rate of spread at the same time, drawing from both total population and population density. 
+
+What concept did you most solidify in this challenge?
+How to write a method in driver code that will iterate through a class, rather than writing a method within the class to iterate. 
+	
+=end
+
+
+
+
 
 
