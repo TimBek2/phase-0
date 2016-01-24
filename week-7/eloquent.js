@@ -4,13 +4,20 @@
 
 // Program Structure
 // Write your own variable and do something to it.
-
+var name = "Tim"
+console.log(name + " rocks")
 
 
 
 // Complete one of the exercises: Looping a Triangle, FizzBuzz, or Chess Board
+// Loop a triangle
+var triangle = ""
+var counter = 1
 
-
+while (counter <= 7) {
+	counter += 1
+	console.log(triangle += "#")
+}
 
 // Functions
 
