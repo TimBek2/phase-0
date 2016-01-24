@@ -35,7 +35,7 @@ function evensOnly(arr) {
   var evens = [];
   for (var i in arr){
     if (arr[i] == 0 || arr[i] % 2 == 0)
-      evens.push(arr[i]) ;  
+      evens.push(arr[i]);  
   }
   return evens;
 }
@@ -58,3 +58,21 @@ console.log(michaelPhelps.name + " " + michaelPhelps.sport + " " + michaelPhelps
 
 
 // Reflection
+/*
+What JavaScript knowledge did you solidify in this challenge?
+I'm getting more comfortable working with objects in JavaScript and understanding how properties work, somewhat similarly to hashes. 
+
+What are constructor functions?
+Constructor functions are functions that create objects. Constructor functions have object properties and methods defined with this in front of them. 
+
+How are constructors different from Ruby classes (in your research)?
+Mostly just in syntax. In JavaScript, methods and properties need to have this in front of them, while in Ruby, they have to be saved in instance variables. 
+
+*/
+
+
+
+
+
+
+
