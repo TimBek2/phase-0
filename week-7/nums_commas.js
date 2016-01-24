@@ -8,28 +8,28 @@
 
 
  //Initial Solution
-function separateComma(number) {
-  // create a variable called number array, which splits the number string into the array
-  var numberArray = number.toString().split('');
-  // index is the length of the number string
-  var index = number.toString().length;
-  // console.log(index);
+// function separateComma(number) {
+//   // create a variable called number array, which splits the number string into the array
+//   var numberArray = number.toString().split('');
+//   // index is the length of the number string
+//   var index = number.toString().length;
+//   // console.log(index);
   
-  // length of index - 3
-  var numIndex = index - 3
-  // numIndex -= 3;
+//   // length of index - 3
+//   var numIndex = index - 3
+//   // numIndex -= 3;
   
-  // insert comma in the array, without removing any objects, at index numIndex, which subtracts by 3 to cover each thousand place, until numIndex <= 0 
-  while (numIndex > 0) {
-  numberArray.splice(numIndex, 0, ",");
-    numIndex -= 3;
-  }
+//   // insert comma in the array, without removing any objects, at index numIndex, which subtracts by 3 to cover each thousand place, until numIndex <= 0 
+//   while (numIndex > 0) {
+//   numberArray.splice(numIndex, 0, ",");
+//     numIndex -= 3;
+//   }
   
-  //turn array into a string which joins each object and print the string
-  numberArray = numberArray.join('');
-  console.log(numberArray);
+//   //turn array into a string which joins each object and print the string
+//   numberArray = numberArray.join('');
+//   console.log(numberArray);
 
-}
+// }
 
 
 // Refactored Solution
@@ -37,14 +37,9 @@ function separateComma(number) {
 function separateComma(number) {
   
   var numberArray = number.toString().split('');
-  
   var index = number.toString().length;
-
-  var numIndex = index - 3
-
-  while (numIndex > 0) {
-  numberArray.splice(numIndex, 0, ",");
-    numIndex -= 3;
+  for(var i = index - 3; i > 0; i -= 3){
+    numberArray.splice(i, 0, ",");
   }
   numberArray = numberArray.join('');
   console.log(numberArray);
