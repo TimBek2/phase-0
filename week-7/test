@@ -1,0 +1,72 @@
+Ch. 0: Introduction (Links to an external site.)
+	Did you learn anything new about JavaScript or programming in general?
+	I learned that JavaScript has no relation at all to Java. I knew they weren't similar in what they do, but I thought maybe they shared a parent company or something. 
+	Are there any concepts you feel uncomfortable with?
+	Nothing so far. I'm anxious to start working in JavaScript, I've heard it can be hard to work with, but it makes sense at this point. 
+
+Ch. 1: Values, Types, and Operators (Links to an external site.)
+	Identify two similarities and two differences between JavaScript and Ruby syntax with regard to numbers, arithmetic, strings, booleans, and various operators.
+	Similarities:
+		1. Both of these languages have the same arithmetic operators + - * / %
+		2. They both have some form of dot notation for calling operatorors/methods on objects. 
+	Differences:
+		1. In Ruby, you can have floats or integers. In JS, all numbers/arithmetic are floats by default, and you must use a method like .floor to explicitly make it an integer. 
+		2. Ruby requires things to be of the same type to be compared, while JS will do a complicated process of converting things to other things in often unpredictable ways. 
+
+Ch. 2: Program Structure (Links to an external site.)
+	What is an expression?
+	A fraction of code that produces a value.
+
+	What is the purpose of semicolons in JavaScript? Are they always required?
+	The semicolon indicates the end of a statement. They're not always required, but usually are. 
+
+	What causes a variable to return undefined?
+	If you call a variable that has not had a value given to it yet. 
+
+	Write your own variable and do something to it in the eloquent.js file.
+	Done.
+
+	What does console.log do and when would you use it? What Ruby method(s) is this similar to?
+	console.log prints the result of a statement to the console. This is similar to puts or print. 
+
+	Write a short program that asks for a user to input their favorite food. After they hit return, have the program respond with "Hey! That's my favorite too!" (You will probably need to run this in the Chrome console (Links to an external site.) rather than node since node does not support prompt or alert). Paste your program into the eloquent.js file.
+
+	var favFood = prompt("What\'s your favorite food?", "")
+	alert("Hey! That's my favorite too!")
+
+	Describe while and for loops
+	While loops create a loop at that point and continue to execute a block until it doesn't apply anymore. If there are multiple statements within the loop, it is wrapped in curly braces. 
+	For loops are like while loops, but they're condensed even further, into just one line. It allows a familiar shorthand to common statements. 
+
+	What other similarities or differences between Ruby and JavaScript did you notice in this section?
+	A lot of the math-based logic gates are the same, it's just some syntax and grammar that is different. Eg JavaScript needs semicolons after every statement while Ruby doesn't, but they both still use if and else statements similarly. Also, they both indent code to help the programmer keep track of blocks. 
+
+	Complete at least one of the exercises (Looping a Triangle, FizzBuzz, of Chess Board) in the eloquent.js file.
+
+
+Ch. 3: Functions (Links to an external site.) (Skip the sections on closure and recursion)
+	What are the differences between local and global variables in JavaScript?
+	Local variables are defined within a function and are scoped only within that function, just like with Ruby. Global variables, however, have to be called outside of a definition and aren't identified with a marker (@ in Ruby), so you can't call them within function definitions either. 
+
+	When should you use functions?
+	Functions are used to perform actions on data passed in, usually stored in variables. There are generally 2 times you need to write a function: 1) If you write the same code over and over again, you should write a function to automate that reptitive process. 2) The other time is if you need some functionality that doesn't exist, and it basically sounds like it needs a function of its own. 
+
+	What is a function declaration?
+	Function declaration is an alternative notation that lets you define a function as long as it starts the line, so you don't have to write out var fun = function...
+
+	Complete the minimum exercise in the eloquent.js file.
+
+
+Ch. 4: Data Structures: Objects and Arrays (Links to an external site.) 
+	Skip the sections on the Lycanthrope's log, Computing Correlations, and sections from Further Arrayology to the Global Object, but read the chapter summary.
+
+	What is the difference between using a dot and a bracket to look up a property? Ex. array.max vs array["max"]
+
+	Create an object called me that stores your name, age, three favorite foods, and a quirk in your eloquent.js file.
+
+	What is a JavaScript object with a name and value property similar to in Ruby?
+
+
+
+
+
