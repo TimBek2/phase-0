@@ -64,11 +64,13 @@ What was it like to approach the problem from the perspective of JavaScript? Did
 At first we tried to solve it the same way we did with Ruby, but discovered that that method didn't work out so well. Instead we had to convert it into an array and insert commas, then convert it back into a string. It's really confusing to write things in JavaScript and you don't know what type of object the methods are returning - you often end up getting an undefined answer and getting confused as to why. 
 
 What did you learn about iterating over arrays in JavaScript?
+We didn't iterate over the array, instead we wrote a function that would count the size of the array (number of digits), and insert a comma every 3. 
 
 What was different about solving this problem in JavaScript?
+We had to use an array to solve it rather than just operating on a string, and you have to have more object conversions in general in JavaScript - they get converted silently, and you have to make sure that it's in the form that you want it to be in. 
 
 What built-in methods did you find to incorporate in your refactored solution?
-
+We used /splice once we learned about it, struggling at first to use /push instead but for some reason that would only add a comma in the first thousands place. 
 
 
 
