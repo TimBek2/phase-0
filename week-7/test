@@ -1,6 +1,7 @@
 Ch. 0: Introduction (Links to an external site.)
 	Did you learn anything new about JavaScript or programming in general?
 	I learned that JavaScript has no relation at all to Java. I knew they weren't similar in what they do, but I thought maybe they shared a parent company or something. 
+
 	Are there any concepts you feel uncomfortable with?
 	Nothing so far. I'm anxious to start working in JavaScript, I've heard it can be hard to work with, but it makes sense at this point. 
 
@@ -11,7 +12,7 @@ Ch. 1: Values, Types, and Operators (Links to an external site.)
 		2. They both have some form of dot notation for calling operatorors/methods on objects. 
 	Differences:
 		1. In Ruby, you can have floats or integers. In JS, all numbers/arithmetic are floats by default, and you must use a method like .floor to explicitly make it an integer. 
-		2. Ruby requires things to be of the same type to be compared, while JS will do a complicated process of converting things to other things in often unpredictable ways. 
+		2. Ruby ends most code blocks with end, while Javascript uses semicolons to end each statement. They're not used exactly the same way, but they're the most common statement-ending pieces. 
 
 Ch. 2: Program Structure (Links to an external site.)
 	What is an expression?
@@ -31,7 +32,7 @@ Ch. 2: Program Structure (Links to an external site.)
 
 	Write a short program that asks for a user to input their favorite food. After they hit return, have the program respond with "Hey! That's my favorite too!" (You will probably need to run this in the Chrome console (Links to an external site.) rather than node since node does not support prompt or alert). Paste your program into the eloquent.js file.
 
-	var favFood = prompt("What\'s your favorite food?", "")
+	var favfood = prompt("What\'s your favorite food?", "")
 	alert("Hey! That's my favorite too!")
 
 	Describe while and for loops
@@ -61,12 +62,23 @@ Ch. 4: Data Structures: Objects and Arrays (Links to an external site.)
 	Skip the sections on the Lycanthrope's log, Computing Correlations, and sections from Further Arrayology to the Global Object, but read the chapter summary.
 
 	What is the difference between using a dot and a bracket to look up a property? Ex. array.max vs array["max"]
+	Using a dot means that you are accessing a value stored in a variable, and it must be a valid variable name. Bracket on the other hand tries to evaluate the expression within the bracket, and then uses the result of the evaluation as the property name. 
 
 	Create an object called me that stores your name, age, three favorite foods, and a quirk in your eloquent.js file.
+	Done
 
 	What is a JavaScript object with a name and value property similar to in Ruby?
+	It's similar to a Hash. 
 
+Reflection:
 
+	What are the biggest similarities and differences between JavaScript and Ruby?
+	They share a lot of the same built in functions, or are present with similar names, but I feel like there's more universality between object types within Ruby vs JS (for example, .reverse works on Strings as well in Ruby, but you can only use it on an Array in JavaScript). From what I can tell so far, they have all of the same built in object classes, but I haven't explored too much in JavaScript yet. 
 
+	Was some of your Ruby knowledge solidified by learning another language? If so, which concepts?
+	When I was doing some things wrong in JavaScript (trying to do things like I would in Ruby), I started realizing how much better I was at understanding how the logic would work and what existed at each point in the code within Ruby, and it was confusing me in JavaScript. 
+
+	How do you feel about diving into JavaScript after reading these chapters?
+	I'm excited to dive into it. I know it's very powerful and versatile, and a lot of people come to love it once they've become more comfortable with it. 
 
 
