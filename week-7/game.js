@@ -10,15 +10,15 @@
 // Functions: 
 
 // Pseudocode
-// Create Object player
-// Object player has 3 properties, rock paper & scissors
-// Function play is passed a choice, and picks a random choice for the computer
-// Compares the two choices and returns the winner
+// Create Object player1 and 2
+// Object player has 2 properties, player number and move choice
+// Function choose lets each player pick a move
+// Function compares the two choices and returns the winner
 // Function cheat has the computer pick, then has you play the winning move
 // A 50% chance is given to get caught, in which case you lose, or you win. 
-// Create Object computer
-// Computer has 3 properties, R P & S
-// Function test returns one of them
+// Create Object computer - Idea shelved for now
+// Computer has 3 properties, R P & S - Shelved
+// Function test returns one of them - Shelved
 
 // Initial Code
 
