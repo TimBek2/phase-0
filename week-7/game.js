@@ -15,7 +15,7 @@
 // Function choose lets each player pick a move
 // Function compares the two choices and returns the winner
 // Function cheat has the computer pick, then has you play the winning move
-// A 50% chance is given to get caught, in which case you lose, or you win. 
+// A 50% chance is given to get caught, in which case you lose, or you win. - Shelved for now
 // Create Object computer - Idea shelved for now
 // Computer has 3 properties, R P & S - Shelved
 // Function test returns one of them - Shelved
