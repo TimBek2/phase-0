@@ -1,8 +1,8 @@
 /*
 Gradebook from Names and Scores
 
-I worked on this challenge [by myself, with:]
-This challenge took me [#] hours.
+I worked on this challenge with: Mollie Stein
+This challenge took us [1] hour.
 
 You will work with the following two variables.  The first, students, holds the names of four students.
 The second, scores, holds groups of test scores.  The relative positions of elements within the two
@@ -81,15 +81,22 @@ var average = function(arr){
 
 // __________________________________________
 // Reflect
+/*
+
+What did you learn about adding functions to objects?
+You can't use function declaration to add a function as a property, but once you get past that it's a pretty intuitive process.
+
+How did you iterate over nested arrays in JavaScript?
+We tried to iterate over the array at first using a for loop, but while we were trying to get that to work we thought about adding the array scores together at once rather than iterating and adding them to a sum variable, and discovered the reduce function which did just that.
+
+Were there any new methods you were able to incorporate? If so, what were they and how did they work?
+Reduce was a new function that iterates through an array and then applies a code block to each value in the array, adding them to a combinor value that is returned at the end. 
 
 
 
 
 
-
-
-
-
+*/
 // __________________________________________
 // Test Code:  Do not alter code below this line.
 
