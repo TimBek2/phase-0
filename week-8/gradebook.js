@@ -1,11 +1,15 @@
 /*
 Gradebook from Names and Scores
-I worked on this challenge [by myself, with Mollie Stein
+
+I worked on this challenge [by myself, with:]
 This challenge took me [#] hours.
+
 You will work with the following two variables.  The first, students, holds the names of four students.
 The second, scores, holds groups of test scores.  The relative positions of elements within the two
 variables match (i.e., 'Joseph' is the first element in students; his scores are the first value in scores.).
+
 Do not alter the students and scores code.
+
 */
 
 var students = ["Joseph", "Susan", "William", "Elizabeth"]
@@ -23,15 +27,50 @@ var scores = [ [80, 70, 70, 100],
 // __________________________________________
 // Write your code below.
 
+// var gradebook = {}
+// for (var i = 0; i < students.length; i++){
+//   gradebook[(students[i])] = {};
+//   gradebook[(students[i])]["testScores"] = scores[i];
+// };
 
+// gradebook.addScore = function(name, score){
+//   gradebook[name]["testScores"].push(score);
+// };
 
+// gradebook.getAverage = function(name){
+//   return average(gradebook[name]["testScores"]);
+// };
 
-
-
+// var average = function(arr){
+//   // var sum = 0;
+//   // for(var i = 0; i < arr.length; i++){
+//   //   (sum += i)/ arr.length;
+//   var sum = arr.reduce(function(a, b){return a + b})
+//   var avg = sum/arr.length;
+//   return avg;
+// };
 
 
 // __________________________________________
 // Refactored Solution
+
+var gradebook = {}
+for (var i = 0; i < students.length; i++){
+  gradebook[(students[i])] = {};
+  gradebook[(students[i])]["testScores"] = scores[i];
+};
+
+gradebook.addScore = function(name, score){
+  gradebook[name]["testScores"].push(score);
+};
+
+gradebook.getAverage = function(name){
+  return average(gradebook[name]["testScores"]);
+};
+
+var average = function(arr){
+  return arr.reduce(function(a, b){return a + b})/arr.length;
+};
 
 
 
