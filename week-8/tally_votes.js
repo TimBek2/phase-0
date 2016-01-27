@@ -63,33 +63,170 @@ var officers = {
 }
 
 // Pseudocode
-
+/* 1. Iterate through votes to access the president property of each sub-object.
+2. Repeat for vicePresident, secretary, and treasurer.
+3. For each property found, place property in voteCount, if property exists, increase by 1
+4. Sort voteCount by value to find highest value.
+5. Place property with highest value into officers.
+*/
 
 // __________________________________________
 // Initial Solution
 
+// // PRESIDENT
 
+for (var voter in votes) {
+    if (voteCount.president.hasOwnProperty(votes[voter].president)) {
+      voteCount.president[votes[voter].president] ++;
+    } else {
+      voteCount.president[votes[voter].president] = 1;
+    }
+}
 
+// // VICE PRESIDENT
 
+for (var voter in votes) {
+    if (voteCount.vicePresident.hasOwnProperty(votes[voter].vicePresident)) {
+      voteCount.vicePresident[votes[voter].vicePresident] ++;
+    } else {
+      voteCount.vicePresident[votes[voter].vicePresident] = 1;
+    }
+}
 
+// //Secretary
+
+for (var voter in votes) {
+    if (voteCount.secretary.hasOwnProperty(votes[voter].secretary)) {
+      voteCount.secretary[votes[voter].secretary] ++;
+    } else {
+      voteCount.secretary[votes[voter].secretary] = 1;
+    }
+}
+
+//Treasurer
+
+for (var voter in votes) {
+    if (voteCount.treasurer.hasOwnProperty(votes[voter].treasurer)) {
+      voteCount.treasurer[votes[voter].treasurer] ++;
+    } else {
+      voteCount.treasurer[votes[voter].treasurer] = 1;
+    }
+}
+
+// President Selection
+
+var presidentVotes = [];
+for (var candidate in voteCount.president) {
+      presidentVotes.push([candidate,voteCount.president[candidate]]);
+      presidentVotes.sort(function(a, b) {return b[1] - a[1]});
+      officers.president = presidentVotes[0][0];
+}
+
+// Vice President Selection
+
+var vicePresidentVotes = [];
+for (var candidate in voteCount.vicePresident) {
+      vicePresidentVotes.push([candidate,voteCount.vicePresident[candidate]]);
+      vicePresidentVotes.sort(function(a, b) {return b[1] - a[1]});
+      officers.vicePresident = vicePresidentVotes[0][0];
+}
+
+// Secretary Selection
+var secretaryVotes = [];
+for (var candidate in voteCount.secretary) {
+      secretaryVotes.push([candidate,voteCount.secretary[candidate]]);
+      secretaryVotes.sort(function(a, b) {return b[1] - a[1]});
+      officers.secretary = secretaryVotes[0][0];
+}
+
+//Treasurer Selection
+
+var treasurerVotes = [];
+for (var candidate in voteCount.treasurer) {
+      treasurerVotes.push([candidate,voteCount.treasurer[candidate]]);
+      treasurerVotes.sort(function(a, b) {return b[1] - a[1]});
+      officers.treasurer = treasurerVotes[0][0];
+}
 
 
 // __________________________________________
 // Refactored Solution
+/* This part works
+
+// for (var officers in voteCount) {
+//   for (var voters in votes){
+//     if (voteCount[officers].hasOwnProperty(votes[voters][officers])) {
+//       voteCount[officers][votes[voters][officers]] ++;
+//     } else {
+//       voteCount[officers][votes[voters][officers]] = 1;
+//     }
+//   }
+// }
+
+*/
+
+/* This part doesnt
+// var presidentVotes = [];
+// for (var candidate in voteCount.president) {
+//       presidentVotes.push([candidate,voteCount.president[candidate]]);
+//       presidentVotes.sort(function(a, b) {return b[1] - a[1]});
+//       officers.president = presidentVotes[0][0];
+// }
+
+// var voteArray = [];
+
+// for (var key in voteCount) {
+//     if (voteCount.hasOwnProperty(key)) {
+//       voteArray.push(voteCount[key]);  
+//     }
+// }
+// for (var key in voteArray)
+// voteArray[key].sort(function(a, b) {return b[1] - a[1]});
+// console.log(voteArray)
 
 
+// var chartData = []
+
+// for(var key in voteCount) {        
+//     var properties = voteCount[key];
+
+//     if(typeof properties === "object") {
+//        var array = [];
+
+//        for(var propKey in properties) {
+//            array.push([propKey, properties[propKey]])
+//        }
+
+//        voteArray.push(array);
+//     }             
+// }
+
+// voteArray[0].sort(function(a, b) { return b[1] - a[1]});
+// console.log(voteArray[0][0][0])
+// officers.president = voteArray[0][0][0]
 
 
+// for (var x in voteCount){
+//   var officerVotes = [];
 
+//   for (var candidate in voteCount[x]) {
+//       officerVotes.push([candidate, voteCount[x][candidate]]);
+//   };
+//   console.log(officerVotes)
+  
+//       var sortedOfficerVotes = officerVotes.sort(function(a, b) {return b[1] - a[1]});
+//       officers[x] = sortedOfficerVotes[0];
+// }
 
+*/
 // __________________________________________
 // Reflection
+/*
 
 
 
 
-
-
+*/
 // __________________________________________
 // Test Code:  Do not alter code below this line.
 
