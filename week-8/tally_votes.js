@@ -151,7 +151,7 @@ for (var candidate in voteCount.treasurer) {
 
 // __________________________________________
 // Refactored Solution
-/* This part works
+/* This part - sort votes into voteCount object - works
 
 // for (var officers in voteCount) {
 //   for (var voters in votes){
@@ -165,7 +165,7 @@ for (var candidate in voteCount.treasurer) {
 
 */
 
-/* This part doesnt
+/* This part - select officers from voteCount - doesnt work
 // var presidentVotes = [];
 // for (var candidate in voteCount.president) {
 //       presidentVotes.push([candidate,voteCount.president[candidate]]);
@@ -222,6 +222,14 @@ for (var candidate in voteCount.treasurer) {
 // __________________________________________
 // Reflection
 /*
+What did you learn about iterating over nested objects in JavaScript?
+Iterating through nested objects is much more complicated in JS than in Ruby, because you have to make sure the objects are of the right filetype before running the functions, or it will usually silently fail, unlike Ruby. Also, JS requires the use of for... if loops, rather than just working with each with Ruby. Map exists and seems to behave like it does in Ruby, but I haven't tried it in JS yet. 
+
+Were you able to find useful methods to help you with this?
+We were able to successfully got the problem to work our first time through, and as we were solving it, we started having some ideas come into our head for how to refactor it. However, as you see above, once we got past one or two steps in the refactored solution, everything stopped working, and we couldn't get the half-refactored and half -unrefactored solutions to communicate with each other, so in the end the refactored solution didn't work at all. Even in the refactored version we didn't use any fancy new JS functions, just another for...if loop to iterate one layer deeper on the object and then sort again. 
+
+What concepts were solidified in the process of working through this challenge?
+Needing to pay attention to what type of object you're working with in JS became abundantly clear in this challenge. Related to this, I've also finally started printint out tests for my variables and code immediately as I write them, so that I know what type of object I'm working with. While with Ruby, if you pass in the wrong type it'll tell you and point out the error, JS will attempt to coerce the incorrect object into the type that it wants, but that usually ends up behaving in a way that doens't make sense to you and has your code either return something that you don't want, or it'll just silently break and you'll have to dig back through to find any mistakes. 
 
 
 
