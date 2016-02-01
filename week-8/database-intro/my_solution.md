@@ -31,6 +31,8 @@ FROM regions
 INNER JOIN states
 ON regions.id=states.region_id;
 
+<!-- My Schema -->
+![my schema](https://github.com/TimBek2/phase-0/blob/master/week-8/database-intro/Screen%20Shot%202016-02-01%20at%202.52.44%20AM.png "My Schema")
 <!-- Reflection -->
 What are databases for?
 Databases are for storing, accessing, and manipulating large quantities of data in a way that is less tedious.
