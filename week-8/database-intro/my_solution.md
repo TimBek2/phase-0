@@ -1,39 +1,50 @@
-<!-- 1. Select all data for all states -->
+1. Select all data for all states
 SELECT * FROM states;
-<!-- 2. Select all data for all regions -->
-ELECT * FROM regions;
-<!-- 3. Select the state_name and population for all states -->
+
+2. Select all data for all regions
+SELECT * FROM regions;
+
+3. Select the state_name and population for all states
 SELECT state_name, population FROM states;
-<!-- 4. Select the state_name and population for all states ordered by population. The state with the highest population should be at the top -->
+
+4. Select the state_name and population for all states ordered by population. The state with the highest population should be at the top
 SELECT state_name, population FROM states
 ORDER BY population DESC;
-<!-- 5. Select the state_name for the states in region 7 -->
+
+5. Select the state_name for the states in region 7
 SELECT state_name FROM states WHERE region_id = 7;
-<!-- 6. Select the state_name and population_density for states with a population density over 50 ordered from least to most dense -->
+
+6. Select the state_name and population_density for states with a population density over 50 ordered from least to most dense
 SELECT state_name, population_density
 FROM states
 WHERE population_density > 50
 ORDER BY population_density;
-<!-- 7. Select the state_name for states with a population between 1 million and 1.5 million people -->
+
+7. Select the state_name for states with a population between 1 million and 1.5 million people
 SELECT state_name
 FROM states
 WHERE population BETWEEN 1000000 AND 1500000;
-<!-- 8. Select the state_name and region_id for states ordered by region in ascending order -->
+
+8. Select the state_name and region_id for states ordered by region in ascending order
 SELECT state_name, region_id FROM states
 ORDER BY region_id ASC;
-<!-- 9. Select the region_name for the regions with "Central" in the name -->
+
+9. Select the region_name for the regions with "Central" in the name
 SELECT region_name
 FROM regions
 WHERE region_name LIKE '%central%';
-<!-- 10. Select the region_name and the state_name for all states and regions in ascending order by region_id. Refer to the region by name. (This will involve joining the tables) -->
+
+10. Select the region_name and the state_name for all states and regions in ascending order by region_id. Refer to the region by name. (This will involve joining the tables)
 SELECT regions.region_name, states.state_name
 FROM regions
 INNER JOIN states
 ON regions.id=states.region_id;
 
-<!-- My Schema -->
+My Schema
+
 ![my schema](https://github.com/TimBek2/phase-0/blob/master/week-8/database-intro/Screen%20Shot%202016-02-01%20at%202.52.44%20AM.png "My Schema")
-<!-- Reflection -->
+
+Reflection
 What are databases for?
 Databases are for storing, accessing, and manipulating large quantities of data in a way that is less tedious.
 
