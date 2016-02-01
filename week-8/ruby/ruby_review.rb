@@ -60,3 +60,17 @@ end
 
 
 # Reflection
+=begin 
+What concepts did you review or learn in this challenge?
+I had to re-rememeber how to properly iterate through arrays in Ruby, mainly how to properly use the each_with_index method. I found myself wondering if curly braces belonged anywhere after working with JS for two weeks, but it came back fairly quickly. 
+
+What is still confusing to you about Ruby?
+I still need to keep working on iterating through arrays and hashes, but it's much more familiar as this solution came to me fairly quickly. 
+
+What are you going to study to get more prepared for Phase 1?
+I'm going to spend most of my time focusing on classes, arrays, and hashes. They seem the most valuable, so I want to review arrays and hashes while getting more comfortable with classes. 
+
+=end
+
+
+
