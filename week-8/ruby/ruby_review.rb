@@ -18,28 +18,43 @@ Print the new array
 =end
 # Initial Solution
 
-def super_fizzbuzz(array)
-new_arr = []
 
-array.each { |number|
-	if number % 3 == 0 && number % 5 == 0
-		new_arr.push("fizzbuzz")
-	elsif number % 3 == 0
-		new_arr.push("fizz")
-	elsif number % 5 == 0
-		new_arr.push("buzz")
-	else
-		new_arr.push(number)
-	end
-}
-return new_arr
-end
 
-super_fizzbuzz([30, 9, 20, 1])
+# def super_fizzbuzz(array)
+# new_arr = []
+
+# array.each { |number|
+# 	if number % 3 == 0 && number % 5 == 0
+# 		new_arr.push("FizzBuzz")
+# 	elsif number % 3 == 0
+# 		new_arr.push("Fizz")
+# 	elsif number % 5 == 0
+# 		new_arr.push("Buzz")
+# 	else
+# 		new_arr.push(number)
+# 	end
+# }
+# return new_arr
+# end
+
+
 
 # Refactored Solution
+def super_fizzbuzz(array)
+new_arry = []
 
-
+array.each_with_index { |number, index|
+	if number % 15 == 0
+		array[index] = "FizzBuzz"
+	elsif number % 3 == 0
+		array[index] = "Fizz"
+	elsif number % 5 == 0
+		array[index] = "Buzz"
+	else
+		array[index] = number
+	end
+	}
+end
 
 
 
