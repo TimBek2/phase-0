@@ -1,7 +1,7 @@
 // DOM Manipulation Challenge
 
 
-// I worked on this challenge by myself, with: Peter Leong.
+// I worked on this challenge with Peter Leong.
 
 
 // Add your JavaScript calls to this page:
